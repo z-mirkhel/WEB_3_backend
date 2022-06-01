@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MirkhelZ.zadanie3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="https://mir-s3-cdn-cf.behance.net/projects/original/61499934623109.Y3JvcCw1MjcsNDEyLDEyMSwxNjQ.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-head">
+        <img class="header__logo" src="http://pa1.narvii.com/6939/c27c2f6d6a6ed8e90d430d7475723a8ce380630cr1-320-108_00.gif" alt="header_logo">
+        <div class="header__text">WEB_3</div>
+      </div>  
+    </header>
+
+    <div class="wrapper">
+      <div class="formm">
+        <h1 id="form1">Форма:</h1>
+        <form id="form" class="form__body">
+          <div>
+            <label for="username" style="color: black;">Имя:</label><br />
+              <input class="form-control pole shadow bg-white rounded form__input _req" id="names" type="text" name="names"
+                  placeholder="Имя"  >
+          </div>
+           <div>
+            <label for="email" style="color: black;">E-mail:</label><br />
+              <input class="form-control pole shadow bg-white rounded form__input _req _email" id="email" type="email" name="email"
+                      placeholder="E-mail" >
+          </div>
+          <div class="form_item form-group">
+              <label for="formDate" style="color: black;">Дата рождения:</label>
+              <input type="date" class="form_input form__input _req form-control w-50  bg-white rounded" name="dayofbirth" id="dates" value="">
+          </div>
+          <div class="gender">
+              <label style="margin-right: 5px;">Пол : </label>
+              <div>
+                  <input type="radio" class="form-check-input" id="male" name="gender" value="m" checked  />
+                  <label for="male" id="male">мужской</label>
+              </div>
+              <div>
+                  <input type="radio" class="form-check-input" id="female"name="gender" value="f"/>
+                  <label for="female" id="female">женский</label>
+              </div>
+          </div>
+          <div class="limbs">
+              <label>Количество конечностей :</label>
+              <input type="radio" class="form-check-input" id="2" name="limbs" value="2"   >
+              <label for="2" id="2">1</label>
+              <input type="radio" class="form-check-input" id="4" name="limbs" value="4" checked >
+              <label for="4" id="4">2</label>
+              <input type="radio" class="form-check-input" id="8" name="limbs" value="8" >
+              <label for="8" id="8">3</label>
+              <input type="radio" class="form-check-input" id="16" name="limbs" value="16" >
+              <label for="16" id="16">4</label>
+          </div>
+          <div class="capabilities">
+              <select name="capabilities[]" class="form-control pole shadow bg-white rounded" size="2" multiple  required>
+                  <option value="s1">бессмертие</option>
+                  <option value="s2">прохождение сквозь стены</option>
+                  <option value="s3">левитация</option>
+                  <option value="s4">лазеры из глаз</option>
+              </select>
+          </div>
+          <div>
+            <label for="textarea" style="color: black;">Биография:</label><br />
+              <textarea id="comment" class="form-control shadow bg-white rounded form__input _req" type="text" name="bio" placeholder="Биография"></textarea>
+          </div>
+          <div class="form__checkbox">
+              <input type="checkbox" id="userAgreement"  name="agree" class="form-check-input checkbox__input _req">
+               <label class="checkbox__label" for="userAgreement">Согласие на <a>обработку персональных данных</a>.<span>*</span></label>
+          </div>
+
+          <div>
+              <input class="btn btn-success btn-md" type="submit" name="submit" value="Отправить">
+          </div>
+      </form>
+      </div>
+    
+      <div class="slider">
+        <div class="slider__item">
+          <img src="img/PuTTY.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+          <img src="img/1.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+          <img src="img/2.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+          <img src="img/3.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+          <img src="img/4.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+          <img src="img/5.jpg" alt="img">
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="js/js.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
+  </body>
+</html>
