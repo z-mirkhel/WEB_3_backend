@@ -100,9 +100,9 @@ if($power4 == 1){
 }
 
 
-$user='u41154';
-$pass='3457456';
-$db = new PDO("mysql:host=localhost;dbname=u41154",$user,$pass,array(PDO::ATTR_PERSISTENT => true));
+$user='u46878';
+$pass='2251704';
+$db = new PDO("mysql:host=localhost;dbname=u46878",$user,$pass,array(PDO::ATTR_PERSISTENT => true));
 
     $stmt = $db->prepare("INSERT INTO application SET name = ?,mail=?,bio=?,date =?,gender=?,limbs=?,ability_1=?,ability_2=?,ability_3=?,ability_4=?");
 
