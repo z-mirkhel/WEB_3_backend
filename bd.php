@@ -108,8 +108,6 @@ $db = new PDO("mysql:host=localhost;dbname=u41154",$user,$pass,array(PDO::ATTR_P
 
 if( $stmt -> execute(array($_POST['names'],$_POST['email'],$_POST['dayofbirth'],$gender,$limbs,$powers1,$powers2,$powers3,$powers4,$_POST['bio']))){
     $massage="Данные успешно сохранены";
-}else{
-    $massage="Ошибка";
 }
 
 $response=['massage'=>$massage];
